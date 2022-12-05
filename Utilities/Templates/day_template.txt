@@ -1,0 +1,12 @@
+def part1(data):
+    print(f"Part 1 is not complete yet.")
+    
+def part2(data):
+    print(f"Part 2 is not complete yet.")
+
+
+if __name__ == "__main__":
+    with open(<INPUTFILEHERE>, "r") as f:
+        data = f.read()
+    part1(data)
+    part2(data)
