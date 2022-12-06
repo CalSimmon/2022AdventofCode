@@ -1,14 +1,18 @@
 def part1(data):
+    # Run through the length of the data in chunks of 4
     for x in range(len(data) - 3):
         curr = data[x:x + 4]
+        # Check if there are any duplicates in the chunk.  If there isn't, return the number of characters.
         if len(set(curr)) == len(curr):
             marker = x + 4
             break
     print(f"The first marker is after character {marker}.")
     
 def part2(data):
+    # Run through the length of the data in chunks of 14
     for x in range(len(data) - 13):
         curr = data[x:x + 14]
+        # Check if there are any duplicates in the chunk.  If there isn't, return the number of characters.
         if len(set(curr)) == len(curr):
             message = x + 14
             break
